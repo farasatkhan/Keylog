@@ -1,0 +1,5 @@
+PyHook [https://pypi.python.org/pypi/pyHook]
+Pythoncom [https://sourceforge.net/projects/pywin32/files/]
+Python 2.7 [https://www.python.org/downloads/]
+
+Note: pythoncom comes with ActivePython [https://www.activestate.com/activepython] but you can get it separately on SourceForge as part of pywin32 [https://sourceforge.net/projects/pywin32/files/].
