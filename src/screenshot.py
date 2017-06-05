@@ -9,7 +9,7 @@ def screen():
     try: 
     	global k
 
-    	location = os.getcwd() + '\data' + os.sep + 'screenshot' + os.sep + 'screenshot_'+ str(k) + '.png'
+    	location = os.getcwd() + '\data' + os.sep + 'screenshot' + os.sep + 'screenshot_'+ str(k) + '.jpeg'
 
     	#location_test = '..\\data\\screenshot\\screenshot_'+ str(k) + '.png'
 

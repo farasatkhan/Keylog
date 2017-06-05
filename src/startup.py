@@ -23,4 +23,3 @@ def startupFunc():
 	except Exception:
 		pass
 	return True
-

