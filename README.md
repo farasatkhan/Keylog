@@ -17,12 +17,12 @@ You would need to add your credentials where necessary. You would be asked to pr
 
 ### Example:
 
-'''
+```
  	   USER = 'yourFirstEmail@gmail.com'
  	   PASS = 'passw0rd'
  	   FROM = USER
  	   TO = 'yourSecondEmail@gmail.com'
-'''
+```
 
 Optional: You can also attach the file with the chrome.exe file.
 
